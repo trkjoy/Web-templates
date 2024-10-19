@@ -36,7 +36,7 @@
         <link rel="stylesheet" href="css/main.css">
 		<!-- Media Queries -->
         <link rel="stylesheet" href="css/media-queries.css">
-
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 		<!--
 		Google Font
 		=========================== -->                    
@@ -45,13 +45,10 @@
 		<link href='http://fonts.useso.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
 		<!-- Ubuntu / Body Font -->
 		<link href='http://fonts.useso.com/css?family=Ubuntu:400,300' rel='stylesheet' type='text/css'>
-		
+		<script src="js/jquery-1.8.3.min.js"></script>
 		<!-- Modernizer Script for old Browsers -->		
         <script src="js/modernizr-2.6.2.min.js"></script>
 
-
-		
-	
     </head>
 	
     <body id="body">
@@ -117,7 +114,59 @@
         <!--
         End Fixed Navigation
         ==================================== -->
-        		
+        <section class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="slider-info">
+							<img src="img/banner.jpg" class="img-responsive" alt="">
+							
+						</div>
+					</li>
+					<li>
+						<div class="slider-info">
+							<img src="img/banner1.jpg" class="img-responsive" alt="">
+							
+						</div>
+					</li>
+					<li>	
+						<div class="slider-info">
+							<img src="img/banner2.jpg" class="img-responsive" alt="">
+							
+						</div>
+					</li>
+					<li>	
+						<div class="slider-info">
+							<img src="img/banner3.jpg" class="img-responsive" alt="">
+							
+						</div>
+					</li>
+					<li>	
+						<div class="slider-info">
+							<img src="img/banner4.jpg" class="img-responsive" alt="">
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+			<!-- FlexSlider -->
+			<script defer src="js/jquery.flexslider.js"></script>
+			<script type="text/javascript">
+				$(function(){
+				  SyntaxHighlighter.all();
+				});
+				$(window).load(function(){
+				  $('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+				  });
+				});
+			</script>
+			<!-- FlexSlider -->
+		<!-- slider -->		
 		<!--
 		Start About Section
 		==================================== -->
@@ -1346,7 +1395,6 @@
 		<!-- 
 		Essential Scripts
 		=====================================-->
-		
 		<!-- Main jQuery -->
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<!-- Bootstrap 3.1 -->

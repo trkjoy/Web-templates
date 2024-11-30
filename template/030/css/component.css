@@ -4,10 +4,9 @@
 
 .og-grid {
 	list-style: none;
-	padding: 20px 0;
-	margin: 0 20px;
-/*	text-align: center;*/
-/*	width: 78%;*/
+	margin: 20px 20px;
+	text-align: center;
+	width: 100%;
 }
 
 .og-grid li {
@@ -65,7 +64,7 @@
 	width: 40px;
 	height: 40px;
 	top: 20px;
-	right: 20px;
+	right: 420px;
 	cursor: pointer;
 }
 

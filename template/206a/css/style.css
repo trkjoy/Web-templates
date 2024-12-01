@@ -42,19 +42,32 @@ body{
 	min-height:865px;
 }
 .header-top {
-  padding: 2.5em 0;
-  background:rgba(43, 121, 144, 0.22);
+  padding: 0.5em 0;
+  background:rgba(45, 45, 45, 1);
+  position: fixed; /* 使菜单置顶 */
+  top: 0; /* 顶部距离为0 */
+  /* left:40%; */
+  width:100%;
+  z-index: 1000; /* 确保菜单在其他内容之上 */
  }
 .logo{
 	float: left;
+	padding-left: 20%;
 }
 .logo a {
   display: block;
 }
 .top-menu{
 	float: right;
-	  margin-top: 0.2em;
+	padding-right: 20%;
 }
+.top-menu ul {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
 .top-menu ul li{
 	display: inline-block;
 	padding-top: 0.3em;
@@ -79,9 +92,21 @@ body{
 
 
 .slider {
+	width: 100%;
 	position: relative;
 	text-align: center;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
 	
+}
+.callbacks_container{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
 }
 .rslides {
   position: relative;
@@ -224,7 +249,7 @@ p.lable1 {
 
 }
 .services-section {
-  background: url("../images/banner1.jpg") no-repeat;
+  background: url("../images/banner2.jpg") no-repeat;
   background-size: cover;
   min-height: 500px;
   padding: 9em 0;
@@ -273,7 +298,7 @@ p.lable1 {
   padding: 2em 0;
 }
 .portfolio-header{
- width: 37%;
+ width: 56%;
   margin: 0 auto;
 }
 .portfolio-header h3 {
@@ -436,12 +461,12 @@ div#portfoliolist {
 /*-- portfolio--*/
 
 .testimonial-section {
-  background: #4d4143;
-  padding: 7em 0 2em;
+  background: #1a1a1a;
+  padding: 5em 0;
 
 }
 .testimonial-header {
-   width: 37%;
+   /* width: 37%; */
   margin: 0 auto;
 
 }
@@ -453,7 +478,7 @@ div#portfoliolist {
   font-weight: 600;
 }
 .testimonial-header span {
-  color: #74d1fc;
+  color: red;
   font-size: 1.3em;
   font-weight: 600;
 }
@@ -461,6 +486,22 @@ div#portfoliolist {
   font-size: 1.3em;
   color: #fff;
  }
+.testimonial-bg{
+	background: url("../images/pic3.jpg") no-repeat;
+	background-size: cover;
+	min-height: 641px;
+	padding-bottom: 10px;
+}
+.testimonial-grid{
+	width: 100%; /* 父容器的宽度 */
+    height: auto; /* 父容器的高度 */
+    overflow: hidden; /* 防止图像超出容器范围 */
+}
+.testimonial-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
  article > div {
 	text-align: center;
 }
@@ -536,11 +577,10 @@ div#portfoliolist {
 .team-section {
   padding: 6em 0;
 }
-.team-header {
+/* .team-header {
  width: 37%;
-  margin: 0 auto 3.5em;
-
-}
+ margin: 0 auto 3.5em;
+} */
 .team-header h3 {
   font-size: 2.5em;
   color: #000000;
@@ -557,14 +597,20 @@ div#portfoliolist {
   font-size: 1.3em;
   color: #000000;
  }
+
+ .team-grid {
+	position: relative;
+	text-align: center;
+	margin-top:1em; 
+  }
+
  .team-grid img {
-  border-radius: 15em;
-  border: 15px solid red;
+  border-radius: 1em;
+  /* border: 15px solid red; */
 }
-.team-grid {
-  position: relative;
-  text-align: center;
-  margin-top:1em; 
+ .certificate {
+  width: 250px;
+  height: 350px;
 }
 .team-info {
   position: absolute;
@@ -607,10 +653,10 @@ div#portfoliolist {
   padding: 6em 0 0;
   background: url("../images/banner3.jpg") no-repeat;
   background-size: cover;
-    min-height: 1055px;
+    min-height: 641px;
 }
 .pricing-header {
-    width: 37%;
+    /* width: 37%; */
   margin: 0 auto 2em;
 
 }
@@ -622,7 +668,7 @@ div#portfoliolist {
     font-weight: 600;
 }
 .pricing-header span {
-  color: #ffd800;
+  color: red;
   font-size: 1.3em;
   font-weight: 600;
 }
@@ -630,6 +676,10 @@ div#portfoliolist {
   font-size: 1.3em;
   color: #fff;
  }
+.pricing-grids p{
+	font-size: 1.3em;
+	color: #fff;
+   }
 .pric-head h3 {
   font-size: 3.5em;
   color: #fff;
@@ -715,7 +765,7 @@ div#portfoliolist {
   padding: 5em 0;
 }
 .blog-header {
-    width: 37%;
+    /* width: 37%; */
   margin: 0 auto 3.5em;
 
 }
@@ -788,9 +838,89 @@ div#portfoliolist {
   color: #797272;
   line-height: 1.8em;
 }
+
+
+/*=================================================================
+	Contact
+==================================================================*/
+
+#contact-us {
+    padding: 70px 0 0;
+	background: #1a1a1a;
+	color: #fff;
+}
+
+.contact-form {
+	margin-bottom: 40px;
+}
+
+.contact-form .form-control {
+	background-color: transparent;
+	border: 1px solid #4e595f;
+	height: 38px;
+}
+
+.contact-form input:hover, 
+.contact-form textarea:hover,
+#contact-submit:hover {
+    border-color: #ff7026;
+}
+
+#contact-submit {
+	background-color: #ff7026;
+	padding: 12px 0;
+	width: 100%;
+	margin: 0;
+}
+
+.contact-form textarea.form-control {
+    padding: 10px;
+    height: 120px;
+}
+
+.contact-info p {
+	margin-bottom: 25px;
+}
+
+.con-info {
+    margin-bottom: 20px;
+}
+
+.con-info i,
+.con-info span {
+    float: left;
+}
+
+.con-info span {
+	margin: -5px 0 0 15px;
+}
+
+.error {
+    display: none;
+    padding: 10px;
+    color: #D8000C;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: #FFBABA;
+}
+
+.success {
+    background-color: #ff7026;
+    border-radius: 4px;
+    color: #fff;
+    display: none;
+    font-size: 13px;
+    padding: 10px;
+}
+
+#map-canvas {
+    height: 370px;
+    width: 100%;
+}
+
 /*** contact***/
 .contact-section{
-	background: #2d2d2d;
+	background: #1a1a1a;
 	padding: 7em 0;
 }
 .contact-leftgrid h3 {
@@ -799,7 +929,7 @@ div#portfoliolist {
 
 }
 .contact-leftgrid span {
-  color: #c7c7c7;
+  color: red;
   font-size: 1.3em;
   font-weight: 600;
     text-transform: capitalize;
@@ -857,7 +987,8 @@ div#portfoliolist {
   background: #44b2c1;
 }
 .contact-leftgrid {
-  padding: 0 8em 0 11em;
+  /* padding: 0 8em 0 11em; */
+  padding-bottom: 2em;
 }
 .contact-rightgrid {
   padding: 0;
@@ -883,7 +1014,7 @@ div#portfoliolist {
 }
 .footer-top a {
 	font-size: 19px;
-	color: #f0c514;
+	color: #ff7026;
 	font-weight: 400;
 	text-transform: capitalize;
 }

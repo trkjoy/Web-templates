@@ -81,6 +81,97 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="clearfix"></div>
   </div>
 
+  <ul class="right_nav moblie_right_ul" style="overflow: visible;">
+      <li style="right: 0px;">
+          <div class="iconBox oln_ser">
+              <img src="./images/mdhh.png">
+             <h4>电话</h4>
+          </div>
+          <div class="hideBox" style="display: none; opacity: 1;">
+             <div class="hb">
+                <h5>电话</h5>
+                <div class="fonttalk">
+                     <p><a href="tel:+86 13316446168">+86 18621010386</a></p>
+                </div>
+             </div>
+          </div>
+       </li>
+       <li style="right: 0px;">
+        <div class="iconBox oln_ser">
+            <img src="./images/mwpp.png">
+           <h4>座机</h4>
+        </div>
+        <div class="hideBox" style="display: none; opacity: 1;">
+           <div class="hb">
+              <h5>座机</h5>
+              <div class="fonttalk">
+                   <p><a href="tel:400-003-1081">400-003-1081</a></p>
+              </div>
+           </div>
+        </div>
+     </li>
+      <li style="right: 0px;">
+           <div class="iconBox oln_ser"> 
+               <img src="./images/myxx.png">
+              <h4>邮箱</h4>
+           </div>
+           <div class="hideBox" style="display: none; opacity: 1;">
+              <div class="hb">
+                 <h5>邮箱</h5>
+                 <div class="fonttalk">
+                      <p><a href="mailto:jiuguozhineng@126.com">jiuguozhineng@126.com</a></p>
+                 </div>
+              </div>
+           </div>
+        </li>
+      <li>
+           <div class="iconBox">
+              <img src="./images/mwxx.png">
+              <h4>微信</h4>
+           </div>
+           <div class="hideBox" style="display: none; opacity: 1;">
+              <div class="hb">
+                 <h5>微信</h5>
+                 <div class="fonttalk">
+                  <p><img src="//cdn.globalso.com/sharingpowerbank/wxy.png" alt="weixin"></p>
+                 </div>
+              </div>
+           </div>
+        </li>
+        <li style="display:none"></li>
+        <script>
+          $(function () {
+              var right_nav = $(".right_nav"); 
+              $(".right_nav li").each(function(){
+                  $(this).mouseenter(function () {
+                      $(this).animate({right: "85" }, 300);
+                  })
+                  $(this).mouseleave(function () {
+                        $(this).animate({right: "0" }, 100);
+                    });
+              })
+              $(".right_nav li").each(function (i) {
+                  if (i < $(".right_nav li").length-1 ) {
+                    $(this).mouseover(function () {
+                        $(this).children(".hideBox").stop().fadeIn();
+                        right_nav.css('overflow', 'visible')
+                    });
+                    $(this).mouseout(function () {
+                        $(this).children(".hideBox").hide();
+                        right_nav.css('overflow', 'visible')
+                    });
+                  } else if (i == $(".right_nav li").length-1) {
+                    $(this).click(function () {
+                        $('body,html').animate({
+                          scrollTop: 0
+                        }, 400);
+                    })
+                  }
+              })
+            });
+        </script>
+  </ul>
+
   <!--End Fixed Navigation==================================== -->
   <section class="slider" id="home">
     <div class="flexslider">

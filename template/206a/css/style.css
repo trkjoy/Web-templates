@@ -44,6 +44,7 @@ body{
 .header-top {
   padding: 0.5em 0;
   background:rgba(45, 45, 45, 1);
+  /* opacity:0.5; */
   position: fixed; /* 使菜单置顶 */
   top: 0; /* 顶部距离为0 */
   /* left:40%; */
@@ -305,14 +306,13 @@ p.lable1 {
 
 }
 .services-section {
-  background: url("../images/banner2.jpg") no-repeat;
+  background: url("../images/bgpic2.jpg") no-repeat;
   background-size: cover;
   min-height: 500px;
   padding: 9em 0;
 }
 .service-leftgrid h3 {
   font-size: 2.5em;
-  color: #fff;
   margin-bottom: 1em;
 }
 .service-leftgrid span {
@@ -322,7 +322,6 @@ p.lable1 {
 }
 .service-leftgrid p {
   font-size: 1.3em;
-  color: #fff;
   line-height: 1.8em;
 }
 .right-grid1 {
@@ -353,6 +352,34 @@ p.lable1 {
 .service2 {
   padding: 2em 0;
 }
+
+
+/*******section***********/
+.section {
+	padding: 4em 0;
+}
+.sectionheader {
+	text-align: center;
+ 	margin: 0 auto 3.5em;
+}
+.sectionheader h3 {	
+	font-size: 2.5em;	
+	color: #000000;	
+	margin-bottom: 0.1em;	  
+	text-transform: capitalize;		
+	font-weight: 600;
+}
+.sectionheader span {	
+	color: #ff0000;	
+	font-size: 1.3em;	
+	font-weight: 600;
+}
+.sectionheader p {	
+	font-size: 1.3em;	
+	color: #000000;
+ }
+/*******section***********/
+
 .portfolio-header{
  width: 56%;
   margin: 0 auto;
@@ -396,6 +423,8 @@ div#portfoliolist {
 	cursor:pointer;
 	margin:0em 0em;
 	padding:0em 0em;
+	width: 480px;
+    height: 300px;
 }
 .portfolio img {
 	width:100%;
@@ -486,7 +515,7 @@ div#portfoliolist {
 	margin-bottom:3em;
 }
 #filters {
-	margin: 3% 0;
+	/* margin: 3% 0; */
 	padding: 0;
 	list-style: none;
 	text-align: center;
@@ -514,17 +543,17 @@ div#portfoliolist {
   	width: 50%;
   	float: left;
 }
-/*-- portfolio--*/
 
+/*-- testimonial--*/
 .testimonial-section {
-  background: #1a1a1a;
-  padding: 5em 0;
-
+  background: url("../images/bgpic3.jpg") no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  padding: 0;
 }
-.testimonial-header {
-   /* width: 37%; */
+/* .testimonial-header {
+   width: 37%;
   margin: 0 auto;
-
 }
 .testimonial-header h3 {
   font-size: 2.5em;
@@ -541,13 +570,7 @@ div#portfoliolist {
 .testimonial-header p{
   font-size: 1.3em;
   color: #fff;
- }
-.testimonial-bg{
-	background: url("../images/pic3.jpg") no-repeat;
-	background-size: cover;
-	min-height: 641px;
-	padding-bottom: 10px;
-}
+ } */
 .testimonial-grid{
 	width: 100%; /* 父容器的宽度 */
     height: auto; /* 父容器的高度 */
@@ -558,6 +581,14 @@ div#portfoliolist {
     height: 100%;
     object-fit: fill; 
 }
+
+.company-section {
+	background: url("../images/bgpic4.jpg") no-repeat;
+	background-size: cover;
+	min-height: 600px;
+	padding: 0;
+}
+
  article > div {
 	text-align: center;
 }
@@ -1643,7 +1674,7 @@ div#portfoliolist {
   			font-size: 1em;
 		}
 		.portfolio-section {
-  			padding: 4em 0;
+  			padding: 4em 0 0 0;
 		}
 		.portfolio-header h3 {
 			  font-size: 1.6em;

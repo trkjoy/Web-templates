@@ -211,7 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!-- FlexSlider -->
   <!-- slider -->
   <div class="content">
-    <div class="section" id="aboutus">
+    <div class="section aboutus-section" id="aboutus">
       <div class="continer">
         <div class="sectionheader">
           <!-- <img src="images/icon2.png" /> -->
@@ -429,7 +429,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <h3>全球分公司<span>辐射全球</span></h3>
           <p>未来行业将迎来巨大的潜力市场</p>
         </div>
-        <div class="col-md-6 service-leftgrid">
+        <div class="testimonial-grids">
+          <p>全球分公司辐射全球，未来行业将迎来巨大的潜力市场
+            全球分公司辐射全球，未来行业将迎来巨大的潜力市场
+            全球分公司辐射全球，未来行业将迎来巨大的潜力市场
+            全球分公司辐射全球，未来行业将迎来巨大的潜力市场
+            全球分公司辐射全球，未来行业将迎来巨大的潜力市场
+          </p>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -579,17 +585,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
     </div>
 
-    <div class="pricing-section" id="pricing">
+    <div class="section pricing-section" id="pricing">
       <div class="container">
-        <div class="pricing-header">
-          <!-- <img src="images/icon5.png" /> -->
+        <div class="sectionheader">
           <h3>我们将如何 <span>帮助到您</span></h3>
           <!-- <p>帮助描述信息帮助描述信息</p> -->
         </div>
         <div class="pricing-grids">
-          <p>自2014年开始，我们研发生产了全球第一台共享充电宝。截止目前，我们已经交付了大约160万台设备，客户包含了中国，泰国，马来西亚，印尼，中东地区，美国，欧洲国家等。
-            这些经验的积累在您开展这个生意之前，将帮您选择最合适本地的产品，而不是最好的或者是最便宜的。同时还能告诉您如何在一个空白的市场，消费者对这个行业没有认知的市场中，来开展充电宝租赁这个生意。
-            如果您想开始移动电源租赁业务，我们可以为您提供一站式的解决方案，我们的工程师将24小时用英语为您提供帮助。</p>
+          <p>自2014年开始，我们研发生产了全球第一台共享充电宝。截止目前，我们已经交付了大约160万台设备，
+            客户包含了中国，泰国，马来西亚，印尼，中东地区，美国，欧洲国家等。
+            这些经验的积累在您开展这个生意之前，将帮您选择最合适本地的产品，
+            而不是最好的或者是最便宜的。同时还能告诉您如何在一个空白的市场，消费者对这个行业没有认知的市场中，来开展充电宝租赁这个生意。
+            如果您想开始移动电源租赁业务，我们可以为您提供一站式的解决方案，我们的工程师将24小时用英语为您提供帮助。
+          </p>
           <!-- <div class="col-md-4 pric-grid effect">
             <div class="pric-top">
               <span>1</span>
@@ -643,14 +651,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div>
     </div>
 
-    <div class="team-section" id="certificate">
+    <div class="section certificate-section" id="certificate">
       <div class="container">
-        <div class="team-header">
+        <div class="sectionheader">
           <!-- <img src="images/icon4.png" /> -->
           <h3><span>荣誉资质</span></h3>
           <p>我们的荣誉资质图片</p>
         </div>
-        <div class="team-grids">
+        <!-- <div class="team-grids">
           <div class="col-md-3 team-grid">
             <img src="images/C1.jpg" class="certificate"/>
           </div>
@@ -688,36 +696,166 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <img src="images/C12.jpg" class="certificate"/>
           </div>
           <div class="clearfix"></div>
-        </div> 
+        </div>  -->
+        <div class="clearfix"></div>
       </div> 
     </div>    
 
-    <div class="testimonial-section" id="clients">
+    <div class="section clients-section" id="clients">
       <div class="container">  
-        <div class="testimonial-header">
+        <div class="sectionheader">
           <!-- <img src="images/icon3.png" /> -->
           <h3>我们的<span>客户和伙伴</span></h3>
           <!-- <p>未来行业将迎来巨大的潜力市场</p> -->
         </div>
-        <div class="testimonial-grid">
-          <img src="images/clients.jpg"/>
+        <div class="clients-grid">
+          <!-- <img src="images/clients.jpg"/> -->
           <div class="clearfix"></div>
         </div>
       </div>
     </div>
 
+    <!-- product-section -->
+    <div class="section product-section" id="product">
+      <div class="continer">
+        <div class="sectionheader">
+          <h3>我们的<span>产品</span></h3>
+          <p>我们的产品,我们的产品,我们的产品,我们的产品</p>
+        </div>
+        <div class="product" id="product">
+          <ul id="filters" class="clearfix">
+            <li><span class="product-filter active" data-filter="p1 p2 p3 p4">全部</span></li>
+            <li><span class="product-filter" data-filter="p1 p4">组件配件</span></li>
+            <li><span class="product-filter" data-filter="p2">桌面设备</span></li>
+            <li><span class="product-filter" data-filter="p3">大屏设备</span></li>
+            <li><span class="product-filter" data-filter="p4">小屏设备</span></li>
+          </ul>
+        </div>
+        <div id="productlist">
+          <div class="product p1 mix_all" data-cat="p1" style="display: inline-block; opacity: 1">
+            <div class="product-wrapper grid_box">
+              <a href="images/p1.jpg" class="swipebox" title=产品1>
+                <img src="images/p1.jpg" class="img-responsive" alt="" /><span class="zoom-icon"></span>
+              </a>
+            </div>
+          </div>
+          <div class="product p2 mix_all" data-cat="p2" style="display: inline-block; opacity: 1">
+            <div class="product-wrapper grid_box">
+              <a href="images/p2.jpg" class="swipebox" title="产品2">
+                <img src="images/p2.jpg" class="img-responsive" alt="" /><span class="zoom-icon"></span>
+              </a>
+            </div>
+          </div>
+          <div class="product p3 mix_all" data-cat="p3" style="display: inline-block; opacity: 1">
+            <div class="product-wrapper grid_box">
+              <a href="images/p3.jpg" class="swipebox" title="产品3">
+                <img src="images/p3.jpg" class="img-responsive" alt="" /><span class="zoom-icon"></span>
+              </a>
+            </div>
+          </div>
+          <div class="product p1 mix_all" data-cat="p1" style="display: inline-block; opacity: 1">
+            <div class="product-wrapper grid_box">
+              <a href="images/p4.jpg" class="swipebox" title="产品4">
+                <img src="images/p4.jpg" class="img-responsive" alt="" /><span class="zoom-icon"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="product p3 mix_all" data-cat="p3" style="display: inline-block; opacity: 1">
+            <div class="product-wrapper grid_box">
+              <a href="images/p5.jpg" class="swipebox" title="产品5">
+                <img src="images/p5.jpg" class="img-responsive" alt="" /><span class="zoom-icon"></span>
+              </a>
+            </div>
+          </div>
+          <div class="product p4 mix_all" data-cat="p4" style="display: inline-block; opacity: 1">
+            <div class="product-wrapper grid_box">
+              <a href="images/p6.jpg" class="swipebox" title="产品6">
+                <img src="images/p6.jpg" class="img-responsive" alt="" /><span class="zoom-icon"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="product p3 mix_all" data-cat="p3" style="display: inline-block; opacity: 1">
+            <div class="product-wrapper grid_box">
+              <a href="images/p7.jpg" class="swipebox" title="产品7">
+                <img src="images/p7.jpg" class="img-responsive" alt="" /><span class="zoom-icon"></span>
+              </a>
+            </div>
+          </div>
+          <div class="product p3 mix_all" data-cat="p3" style="display: inline-block; opacity: 1">
+            <div class="product-wrapper grid_box">
+              <a href="images/p8.jpg" class="swipebox" title="产品8">
+                <img src="images/p8.jpg" class="img-responsive" alt="" /><span class="zoom-icon"></span>
+              </a>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <!-- Script for gallery Here -->
+      <!-- <script type="text/javascript" src="js/jquery.mixitup.min.js"></script> -->
+      <script type="text/javascript">
+        $(function () {
+          var productfilterList = {
+            init: function () {
+              // MixItUp plugin
+              // http://mixitup.io
+              $("#productlist").mixitup({
+                targetSelector: ".product",
+                filterSelector: ".product-filter",
+                effects: ["fade"],
+                easing: "snap",
+                // call the hover effect
+                onMixEnd: productfilterList.hoverEffect(),
+              });
+            },
+
+            hoverEffect: function () {
+              // Simple parallax effect
+              $("#productlist .product").hover(
+                function () {
+                  $(this)
+                    .find(".label")
+                    .stop()
+                    .animate({ bottom: 0 }, 200, "easeOutQuad");
+                  $(this)
+                    .find("img")
+                    .stop()
+                    .animate({ top: -30 }, 500, "easeOutQuad");
+                },
+                function () {
+                  $(this)
+                    .find(".label")
+                    .stop()
+                    .animate({ bottom: -40 }, 200, "easeInQuad");
+                  $(this)
+                    .find("img")
+                    .stop()
+                    .animate({ top: 0 }, 300, "easeOutQuad");
+                }
+              );
+            },
+          };
+          // Run the show!
+          productfilterList.init();
+        });
+      </script>
+      <!-- portfolio-section  -->
+    </div>
+
     <!-- Srart Contact Us
 		=========================================== -->		
-		<section id="contact-us">
+		<div class="section contact-section" id="contact-us">
 			<div class="container">
-				<div class="row">
-					<!-- section title -->
-					<div class="title wow fadeIn contact-leftgrid" data-wow-duration="500ms">
-						<h2>联系<span class="color">我们</span></h2>
-						<div class="border"></div>
-					</div>
-					<!-- /section title -->
-					
+        <div class="sectionheader">
+          <!-- <img src="images/icon3.png" /> -->
+          <h3>联系<span>我们</span></h3>
+          <!-- <p>未来行业将迎来巨大的潜力市场</p> -->
+        </div>
+				<div class="contact-grid row">
 					<!-- Contact Details -->
 					<div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
 						<p>尊敬的访客：欢迎走进玖果科技，我们专注于共享充电宝研发、生产、销售、<br/>同时为您提供强大的运营策略支持，您可以通过以下方式联系我们</p>
@@ -780,38 +918,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</form>
 					</div>
 					<!-- ./End Contact Form -->
-				
 				</div> <!-- end row -->
 			</div> <!-- end container -->
 
-		</section> <!-- end section -->
-
-    <!-- <div class="contact-section" id="contact">
-      <div class="contact-grids">
-        <div class="col-md-6 contact-leftgrid">
-          <img src="images/icon7.png" />
-          <h3><span>联系我们</span></h3>
-          <p>A human being has so many skins inside, covering,</p>
-          <form>
-            <input type="text" class="text" value="Name " onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = 'Name ';}" />
-            <input type="text" class="text" value="Email " onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = 'Email ';}" />
-            <textarea value="Message" onfocus="this.value = '';"
-              onblur="if (this.value == '') {this.value = 'Message';}">Message </textarea>
-            <input type="submit" value="SEND" />
-          </form>
-        </div>
-        <div class="col-md-6 contact-rightgrid">
-          <div class="google-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6305.37759783257!2d-122.403529746032!3d37.797332289985725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f5089838b5%3A0x464f1e09086f6e48!2sCOI+Restaurant!5e0!3m2!1sen!2sin!4v1427347186130">
-            </iframe>
-          </div>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div> -->
+		</div> <!-- end section -->
   </div>
 
   <div class="footer-section">

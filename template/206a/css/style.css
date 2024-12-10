@@ -148,6 +148,35 @@ body{
     padding: 7%;
 }
 
+
+
+/*******section***********/
+.section {
+	padding: 4em 0;
+	min-height: 600px;
+}
+.sectionheader {
+	text-align: center;
+ 	margin: 0 auto 3.5em;
+}
+.sectionheader h3 {	
+	font-size: 2.5em;	
+	color: #000000;	
+	margin-bottom: 0.1em;	  
+	text-transform: capitalize;		
+	font-weight: 600;
+}
+.sectionheader span {	
+	color: #ff0000;	
+	font-size: 1.3em;	
+	font-weight: 600;
+}
+.sectionheader p {	
+	font-size: 1.3em;	
+	color: #000000;
+ }
+/*******section***********/
+
 .slider {
 	width: 100%;
 	position: relative;
@@ -295,7 +324,7 @@ p.lable1 {
 
 .right-top p {
   font-size: 1.39em;
- color: #000000;
+  color: #000000;
 }
 .right-bottom h4 {
   color: red;
@@ -305,11 +334,13 @@ p.lable1 {
   background: #eee;
 
 }
+.aboutus-section{
+	border: none;
+}
 .services-section {
   background: url("../images/bgpic2.jpg") no-repeat;
   background-size: cover;
-  min-height: 500px;
-  padding: 9em 0;
+  border: none;
 }
 .service-leftgrid h3 {
   font-size: 2.5em;
@@ -353,33 +384,6 @@ p.lable1 {
   padding: 2em 0;
 }
 
-
-/*******section***********/
-.section {
-	padding: 4em 0;
-}
-.sectionheader {
-	text-align: center;
- 	margin: 0 auto 3.5em;
-}
-.sectionheader h3 {	
-	font-size: 2.5em;	
-	color: #000000;	
-	margin-bottom: 0.1em;	  
-	text-transform: capitalize;		
-	font-weight: 600;
-}
-.sectionheader span {	
-	color: #ff0000;	
-	font-size: 1.3em;	
-	font-weight: 600;
-}
-.sectionheader p {	
-	font-size: 1.3em;	
-	color: #000000;
- }
-/*******section***********/
-
 .portfolio-header{
  width: 56%;
   margin: 0 auto;
@@ -401,7 +405,7 @@ p.lable1 {
  }
 /*-- portfolio --*/
 .portfolio-section{
-	padding:5em 0;
+	border: none;
 }
 #portfoliolist .portfolio {
 	-webkit-box-sizing: border-box;
@@ -413,10 +417,10 @@ p.lable1 {
 	overflow:hidden;
 	margin: 0;
 }
-div#portfoliolist {
+/* div#portfoliolist {
 	padding: 0px 0px;
 	margin:4em 0em;
-}	
+}	 */
 .portfolio-wrapper {
 	overflow:hidden;
 	position: relative !important;
@@ -493,7 +497,7 @@ div#portfoliolist {
 	top: -152px;
 	width: 290px;
 	height: 219px;
-	background: url(../images/zoom.png) center center no-repeat rgba(183, 37, 3, 0.33);
+	background: url(../images/logo.png) center center no-repeat rgba(183, 37, 3, 0.33);
 	cursor: pointer;
 	transition: all .2s ease-in-out;
 	-webkit-transition: all .2s ease-in-out;
@@ -548,8 +552,7 @@ div#portfoliolist {
 .testimonial-section {
   background: url("../images/bgpic3.jpg") no-repeat;
   background-size: cover;
-  min-height: 800px;
-  padding: 0;
+  border: none;
 }
 /* .testimonial-header {
    width: 37%;
@@ -571,12 +574,16 @@ div#portfoliolist {
   font-size: 1.3em;
   color: #fff;
  } */
-.testimonial-grid{
+
+.testimonial-grids {
 	width: 100%; /* 父容器的宽度 */
     height: auto; /* 父容器的高度 */
     overflow: hidden; /* 防止图像超出容器范围 */
 }
-.testimonial-grid img{
+.testimonial-grids p{
+	font-size: 1.3em;
+}
+.testimonial-grids img{
     width: 100%;
     height: 100%;
     object-fit: fill; 
@@ -585,8 +592,7 @@ div#portfoliolist {
 .company-section {
 	background: url("../images/bgpic4.jpg") no-repeat;
 	background-size: cover;
-	min-height: 600px;
-	padding: 0;
+	border: none;
 }
 
  article > div {
@@ -662,7 +668,7 @@ div#portfoliolist {
 }
 /******************/
 .team-section {
-  padding: 6em 0;
+	border: none;
 }
 /* .team-header {
  width: 37%;
@@ -695,10 +701,7 @@ div#portfoliolist {
   border-radius: 1em;
   /* border: 15px solid red; */
 }
- .certificate {
-  width: 250px;
-  height: 350px;
-}
+
 .team-info {
   position: absolute;
   width: 66%;
@@ -736,11 +739,11 @@ div#portfoliolist {
   border: none;
   margin-top:0.2em;  
 }
+
 .pricing-section {
-  padding: 6em 0 0;
-  background: url("../images/banner3.jpg") no-repeat;
+  background: url(../images/bgpic5.jpg) no-repeat;
   background-size: cover;
-    min-height: 641px;
+  border: none;
 }
 .pricing-header {
     /* width: 37%; */
@@ -765,8 +768,7 @@ div#portfoliolist {
  }
 .pricing-grids p{
 	font-size: 1.3em;
-	color: #fff;
-   }
+}
 .pric-head h3 {
   font-size: 3.5em;
   color: #fff;
@@ -849,7 +851,7 @@ div#portfoliolist {
   border-radius: 6px;
 }
 .blog-section {
-  padding: 5em 0;
+	border: none;
 }
 .blog-header {
     /* width: 37%; */
@@ -926,17 +928,117 @@ div#portfoliolist {
   line-height: 1.8em;
 }
 
+.certificate-section{
+	background: url("../images/bgpic1.jpg") no-repeat;
+	background-size: cover;
+	border: none;
+}
+ .certificate {
+  width: 250px;
+  height: 350px;
+}
+
+.clients-section{
+	background: url("../images/bgpic6.jpg") no-repeat;
+	background-size: cover;
+	border: none;
+}
+.clients-grid{
+	width: 100%; /* 父容器的宽度 */
+    height: auto; /* 父容器的高度 */
+    overflow: hidden; /* 防止图像超出容器范围 */
+}
+.clients-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+/*=================================================================
+	Product
+==================================================================*/
+  .product-header{
+	width: 56%;
+	 margin: 0 auto;
+   }
+   .product-header h3 {
+	 font-size: 2.5em;
+	 color: #000000;
+	 margin-bottom: 0.1em;
+	 font-weight: 600;
+   }
+   .product-header span {
+	 color: #ff0000;
+	 font-size: 1.3em;
+	 font-weight: 600;
+   }
+   .product-header p{
+	 font-size: 1.3em;
+	 color: #000000;
+	}
+   /*-- portfolio --*/
+   .product-section{
+	   border: none;
+   }
+   #productlist .product {
+	   -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   -o-box-sizing: border-box;
+	   width: 25%;
+	   display:none;
+	   float:left;
+	   overflow:hidden;
+	   margin: 0;
+   }
+   /* div#productlist {
+	   padding: 0px 0px;
+	   margin:4em 0em;
+   }	 */
+   .product-wrapper {
+	   overflow:hidden;
+	   position: relative !important;
+	   cursor:pointer;
+	   margin:0em 0em;
+	   padding:0em 0em;
+	   width: 480px;
+	   height: 300px;
+   }
+   .product img {
+	   width:100%;
+	   transition: all 300ms!important;
+	   -webkit-transition: all 300ms!important;
+	   -moz-transition: all 300ms!important;
+   }
+   .product .label {
+	   position: absolute;
+	   width: 100%;
+	   height:40px;
+	   bottom:-40px;
+   }
+   .product .label-bg {
+	   background: #22B4B8;
+	   width: 100%;
+	   height:100%;
+	   position: absolute;
+	   top:0;
+	   left:0;
+   }
+   .product .label-text {
+	   color:#fff;
+	   position: relative;
+	   z-index:500;
+	   padding:5px 8px;
+   }
+   .product .text-category {
+	   display:block;
+	   font-size:9px;
+	   font-size: 12px;
+	   text-transform:uppercase;
+   }
 
 /*=================================================================
 	Contact
 ==================================================================*/
-
-#contact-us {
-    padding: 70px 0 0;
-	background: #1a1a1a;
-	color: #fff;
-}
-
 .contact-form {
 	margin-bottom: 40px;
 }
@@ -954,7 +1056,7 @@ div#portfoliolist {
 }
 
 #contact-submit {
-	background-color: #ff7026;
+	background-color:#ff0000;
 	padding: 12px 0;
 	width: 100%;
 	margin: 0;
@@ -1007,8 +1109,7 @@ div#portfoliolist {
 
 /*** contact***/
 .contact-section{
-	background: #1a1a1a;
-	padding: 7em 0;
+	border: none;
 }
 .contact-leftgrid h3 {
   font-size: 2.5em;
@@ -1029,7 +1130,7 @@ div#portfoliolist {
 }
 
 .contact-leftgrid  input[type="text"]{
-	  width: 100%;
+  width: 100%;
   padding: 15px 24px;
   border: 1px solid #969696;
   font-size: 1.3em;
@@ -1090,18 +1191,17 @@ div#portfoliolist {
   min-height: 555px;
 }
 .footer-section{
-	padding: 3em 0;
+	border: none;
 	text-align: center;
-	background: #1a1a1a;
 }
 .footer-top p {
   font-size: 17px;
-  color: #d5d6d7;
+  /* color: #d5d6d7; */
   font-weight: 400;
 }
 .footer-top a {
 	font-size: 19px;
-	color: #ff7026;
+	color: #ff0000;
 	font-weight: 400;
 	text-transform: capitalize;
 }

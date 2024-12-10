@@ -553,6 +553,8 @@ p.lable1 {
   background: url("../images/bgpic3.jpg") no-repeat;
   background-size: cover;
   border: none;
+  padding: 1em 0;
+  min-height: 665px;
 }
 /* .testimonial-header {
    width: 37%;
@@ -744,6 +746,8 @@ p.lable1 {
   background: url(../images/bgpic5.jpg) no-repeat;
   background-size: cover;
   border: none;
+  min-height: 650px;
+  padding: 1em 0;
 }
 .pricing-header {
     /* width: 37%; */

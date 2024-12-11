@@ -60,21 +60,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="top-menu">
       <ul>
         <li><a href="#home" class="scroll">首页</a></li>
+        <li><a href="#product" class="scroll">产品介绍</a></li>
+        <li><a href="#service" class="scroll">新闻</a></li>
         <li><a href="#aboutus" class="scroll">关于我们</a></li>
-        <li><a href="#service" class="scroll">服务</a></li>
-        <li><a href="#portfolio" class="scroll">产品介绍</a></li>
+        <!-- <li><a href="#portfolio" class="scroll">产品介绍</a></li> -->
         <!-- <li><a href="#testimonial" class="scroll">testimonial</a></li> -->
         <!-- <li><a href="#team" class="scroll">工厂</a></li> -->
-        <li><a href="#blog" class="scroll">为什么选择我们</a></li>
-        <li><a href="#certificate" class="scroll">荣誉资质</a></li>
+        <!-- <li><a href="#blog" class="scroll">为什么选择我们</a></li>
+        <li><a href="#certificate" class="scroll">荣誉资质</a></li> -->
         <li><a href="#contact-us" class="scroll">联系我们</a></li>
       </ul>
     </div>
     <!--script-nav-->
     <script>
-      $(".scroll").click(function (e) {
-        $(".scroll").removeClass("active");
-        $(this).addClass("active");
+      $(function(){
+            $(window).scroll(function() {
+                var scrollDistance = $(window).scrollTop();
+                if(scrollDistance > 10){
+                  $(".header-top").addClass("header-top-scroll");
+                }else{
+                  $(".header-top").removeClass("header-top-scroll");
+                }
+                console.log("页面已经滚动了 " + scrollDistance + " 像素");
+            });
+
+            $(".scroll").click(function (e) {
+              $(".scroll").removeClass("active");
+              $(this).addClass("active");
+            });
       });
     </script>
     <div class="clearfix"></div>
@@ -225,35 +238,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           </div>
           <div class="col-md-6 right-grid">
             <div class="right-top">
-              <p>企业团队经历了共享充电宝行业全生命周期,从2014年开始介入行业</p>
+              <h2>企业团队经历共享充电宝行业全生命周期,从2014年开始介入行业</h2>
               <p class="lable1">
-                <h2>2014年</h2> 
+                <h2>1、2014年</h2>
                 <p>主导研发全球第一款共享充电宝</p>
               </p>
               <p class="lable1">
-                <h2>2017-2019年</h2>
+                <h2>2、2017-2019年</h2>
                 <p>共享充电宝全国范围直营铺设，累计铺设设备30万+台</p>
               </p>
               <p class="lable1">
-                <h2>2020-2021年</h2>
+                <h2>3、2020-2021年</h2>
                 <p>共享充电宝全国范围代理商招商与运营</p>
                 <p>总计招募代理商3万+</p>
                 <p>销售设备160万台</p>
                 <p>对全国所有区域代理商进行赋能支持及培训</p>
               </p>
               <p class="lable1">
-                <h2>2022年</h2>
+                <h2>4、2022年</h2>
                 <p>为中国共享充电宝从业者提供定制化解决方案</p>
                 <p>为美国，日本等多个国家提供共享充电宝软硬件研发方案</p>
               </p>
               <p class="lable1">
-                <h2>2023年</h2>
+                <h2>5、2023年</h2>
                 <p>先后与马来西亚，泰国，越南，新加坡，印尼及欧美地区国家</p>
                 <p>建立商务合作</p>
                 <p>为地方国家合作商提供本土化解决方案，实现本地化运营。</p>
               </p>
               <p class="lable1">
-                <h2>2024年</h2>
+                <h2>6、2024年</h2>
                 <p>全面推进全球共享充电宝技术创新和与业务本土化。</p>
               </p>
             </div>
@@ -268,7 +281,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="sectionheader">
           <!-- <img src="images/icon2.png" /> -->
           <h3>我们能帮到<span>你什么?</span></h3>
-          <p>如果你准备开始这个生意</p>
+          <!-- <p>如果你准备开始这个生意</p> -->
         </div>
         <div class="col-md-6 service-leftgrid">
           <p>在开始你的手机充电租赁业务之前,必须知道的</p>
@@ -297,7 +310,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="continer">
         <div class="sectionheader">
           <h3>合适的<span>场景</span></h3>
-          <p>最适合布置共享充电设备的场景有哪些？</p>
+          <!-- <p>最适合布置共享充电设备的场景有哪些？</p> -->
         </div>
         <!-- <div class="portfolio" id="portfolio">
           <ul id="filters" class="clearfix">
@@ -426,8 +439,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="section testimonial-section" id="testimonial">
       <div class="container">  
         <div class="sectionheader">
-          <h3>全球分公司<span>辐射全球</span></h3>
-          <p>未来行业将迎来巨大的潜力市场</p>
+          <h3>The Future of the Industry: A Market with Immense Potentia<span></span></h3>
+          <p>With the global expansion of 5G networks, the increasing penetration of smartphones, and the growing dependence on mobile devices, the mobile power bank industry is poised for explosive growth. Industry experts predict that by 2030, the global market for mobile power bank rental services will reach $10 billion.
+            In response to this immense potential, Jiuguo Technology has already established branch offices in Shanghai, Shenzhen, Guangzhou, Hong Kong, Thailand, Germany and Malaysia. Through our global presence, we provide comprehensive solutions for mobile power bank rental services to our clients worldwide.</p>
         </div>
         <div class="testimonial-grids">
         </div>
@@ -438,20 +452,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="section company-section" id="company">
       <div class="container">
         <div class="sectionheader">
-          <h3>企业<span>概况</span></h3>
-          <p>企业概况信息</p>
+          <h3>Company Overview<span></span></h3>
+          <!-- <p>企业概况信息</p> -->
         </div>
         <div class="col-md-6 service-leftgrid">
-          <p>深圳玖果科技有限公司是一家专注于共享充电宝研发、生产、销售、运营的高新技术企业，以大数据、人工智能、智能硬件等技术和超过百万台共享设备运营经验为支撑，
-            为全球客户提供共享充电宝OEM/ODM软硬件整体解决方案。</p>
-          <br/>
-          <p>公司研发总部位于深圳，运营总部位于上海，在广州，香港，泰国，马来西亚设有分公司。团队核心成员均来自于美团，竹芒，
-            来电等行业知名企业，行业从业经历都在6年以上 ，拥有丰富的行业运营经验和研发经验。
+          <p>Shenzhen Jiuguo Technology Co., Ltd. is a high-tech enterprise specializing in the R&D, production, sales, and operation of shared power banks. Backed by technologies such as big data, artificial intelligence, and smart hardware, as well as extensive experience in operating over one million shared devices, we provide comprehensive OEM/ODM software and hardware solutions for global clients.
+
+            Our R&D headquarters is located in Shenzhen, while our operations headquarters is based in Shanghai. Additionally, we have branch offices in Guangzhou, Hong Kong, Thailand, and Malaysia. The core members of our team come from renowned industry leaders such as Meituan, ZhuMang, and Laidian, with over six years of professional experience in the field, bringing extensive expertise in both operations and R&D.
+            
+            Our team spearheaded the development and successful deployment of the world’s first shared power bank. Having witnessed the industry’s evolution from its infancy (0) to growth (1) and maturity (10), we bring ten years of shared power bank R&D experience and eight years of operational expertise to support our clients’ growth in multiple dimensions.
+            
+            We adhere to the philosophy of being product-oriented and customer-focused, continuously driving technological development and product innovation to provide premium, one-stop solutions for users worldwide.
           </p>
           <br/>
-          <p>
-            我们始终坚持：以产品为导向，以服务客户为核心的理念，持续技术开发和产品创新，为全球用户提供优质的一站式解决方案。
-          </p>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -460,7 +473,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container">
         <div class="sectionheader">
           <h3>研发<span>生产</span></h3>
-          <p>我们的工厂生产图片</p>
+          <!-- <p>我们的工厂生产图片</p> -->
         </div>
         <div class="team-grids">
           <div class="col-md-3 team-grid">
@@ -650,7 +663,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="sectionheader">
           <!-- <img src="images/icon4.png" /> -->
           <h3><span>荣誉资质</span></h3>
-          <p>我们的荣誉资质图片</p>
+          <!-- <p>我们的荣誉资质图片</p> -->
         </div>
         <!-- <div class="team-grids">
           <div class="col-md-3 team-grid">
@@ -714,7 +727,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="continer">
         <div class="sectionheader">
           <h3>我们的<span>产品</span></h3>
-          <p>我们的产品,我们的产品,我们的产品,我们的产品</p>
+          <!-- <p>我们的产品,我们的产品,我们的产品,我们的产品</p> -->
         </div>
         <div class="product" id="product">
           <ul id="filters" class="clearfix">
@@ -923,21 +936,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="footer-top">
         <p>Copyright &copy; 2024.<a target="_blank" href="index.html">玖果科技</a>All rights reserved.</p>
       </div>
-      <script type="text/javascript">
-        $(document).ready(function () {
-          /*
-            var defaults = {
-                containerID: 'toTop', // fading element id
-              containerHoverID: 'toTopHover', // fading element hover id
-              scrollSpeed: 1200,
-              easingType: 'linear' 
-              };
-            */
-
-          // $(this).UItoTop({ easingType: "easeOutQuart" });
-        });
-      </script>
-      <a class="scroll" href="#head" id="toTop" style="display: block">
+      <a class="scroll" href="#home" id="toTop" style="display: block">
         <span id="toTopHover" style="opacity: 1"> </span></a>
     </div>
   </div>

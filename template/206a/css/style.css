@@ -1662,6 +1662,7 @@ p.lable1 {
 			width: 20%;
 		}
 		.header-top {
+		   color: #000;
            padding: 1.5em 0;
         }
 		span.menu:before {
@@ -1701,6 +1702,7 @@ p.lable1 {
 			text-align: center;
 		}
 		.top-menu ul li a {
+			color: #000;
 			display: block;
 			font-size: 1.2em;
 		}
@@ -1997,6 +1999,7 @@ p.lable1 {
 			width: 100%;
 		}
 		.top-menu ul li a {
+			color: #000;
   			font-size: 1.15em;
 		}
 		.top-menu ul li {
@@ -2007,6 +2010,7 @@ p.lable1 {
 			width: 95.5%;
 	   }
 	   .header-top {
+			color: #000;
 		    padding: 1em 0;
 		}
 	   .rslides h3 {
@@ -2558,6 +2562,7 @@ p.lable1 {
   		margin: 3px 0;
   	}
   	.top-menu ul li a {
+		color: #000;
   		font-size: 1.1em;
 	}
 	.rslides h3 {
@@ -2583,6 +2588,7 @@ p.lable1 {
   		min-height: 230px;
 	}
 	.header-top {
+	  color: #000;
 	  padding: 0.8em 0;
 	}
 	

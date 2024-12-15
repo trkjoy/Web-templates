@@ -84,14 +84,25 @@ body{
 .top-menu ul li a.active {
   color: #ff0000;
 }
-.right-grid h3 {
-  font-size: 2.5em;
-  color: #000000;
-}
 .top-menu ul li a:hover{
 	 color: #ff0000;
+	 display: block;
 }
-
+.top-menu ul li ul{
+	position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    display: none;
+    padding: 10px;
+    width: 250px;
+    border-radius: 0 0 7px 7px;
+    background-color: #a62423;
+    opacity: 0;
+}
+.right-grid h3 {
+	font-size: 2.5em;
+	color: #000000;
+  }
 .right_nav {
 	list-style-type: none;
 	padding-left: 0;
@@ -153,7 +164,7 @@ body{
 
 /*******section***********/
 .section {
-	padding: 6em 0;
+	padding: 4em 0;
 	min-height: 600px;
 }
 
@@ -341,23 +352,25 @@ p.lable1 {
 }
 .aboutus-section{
 	border: none;
+	padding: 0;
 }
 .services-section {
   background: url("../images/bgpic2.jpg") no-repeat;
   background-size: contain;
-  padding: 0;
+  /* padding: 0; */
+  height: 876px;
 }
 .service-leftgrid h3 {
   font-size: 2.5em;
   margin-bottom: 1em;
 }
 .service-leftgrid span {
-  color: #fff600;
+  color: #000;
   font-size: 1.3em;
   font-weight: 600;
 }
 .service-leftgrid p {
-  /* font-size: 1.3em; */
+  font-size: 1.3em;
   line-height: 1.9em;
 }
 .right-grid1 {
@@ -598,7 +611,8 @@ p.lable1 {
 .company-section {
 	background: url("../images/bgpic4.jpg") no-repeat;
 	background-size: contain;
-	padding: 0;
+	/* padding: 0; */
+	height: 877px;
 }
 
  article > div {
@@ -754,8 +768,9 @@ p.lable1 {
 
 .pricing-section {
   background: url(../images/bgpic5.jpg) no-repeat;
-  background-size: contain;
+  background-size: auto;
   padding: 0;
+  height: 677px;
 }
 .pricing-header {
     /* width: 37%; */
@@ -780,6 +795,7 @@ p.lable1 {
  }
 .pricing-grids p{
 	font-size: 1.3em;
+	line-height: 4em;
 }
 .pric-head h3 {
   font-size: 3.5em;
@@ -944,6 +960,7 @@ p.lable1 {
 	background: url("../images/bgpic1.jpg") no-repeat;
 	background-size: contain;
 	/* padding: 0; */
+	height: 877px;
 }
  .certificate {
   width: 250px;
@@ -953,7 +970,8 @@ p.lable1 {
 .clients-section{
 	background: url("../images/bgpic6.jpg") no-repeat;
 	background-size: contain;
-	padding: 0;
+	/* padding: 0; */
+	height: 877px;
 }
 .clients-grid{
 	width: 100%; /* 父容器的宽度 */
@@ -1069,7 +1087,8 @@ p.lable1 {
 }
 
 #contact-submit {
-	background-color:#ff0000;
+	background-color: #ccc;
+    color: #fff;
 	padding: 12px 0;
 	width: 100%;
 	margin: 0;

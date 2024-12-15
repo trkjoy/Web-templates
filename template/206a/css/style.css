@@ -156,6 +156,10 @@ body{
 	padding: 6em 0;
 	min-height: 600px;
 }
+
+.section ol.custom-list{
+	list-style-type: disc;
+}
 .sectionheader {
 	text-align: center;
  	margin: 0 auto 3.5em;
@@ -173,7 +177,7 @@ body{
 	font-weight: 600;
 }
 .sectionheader p {	
-	/* font-size: 1.3em;	 */
+	text-align: left;	
 	color: #000000;
  }
 /*******section***********/
@@ -340,8 +344,8 @@ p.lable1 {
 }
 .services-section {
   background: url("../images/bgpic2.jpg") no-repeat;
-  background-size: cover;
-  border: none;
+  background-size: contain;
+  padding: 0;
 }
 .service-leftgrid h3 {
   font-size: 2.5em;
@@ -552,10 +556,9 @@ p.lable1 {
 /*-- testimonial--*/
 .testimonial-section {
   background: url("../images/bgpic3.jpg") no-repeat;
-  background-size: cover;
-  border: none;
-  padding: 1em 0;
-  min-height: 665px;
+  background-size: contain;
+  padding: 0;
+  height: 877px;
 }
 /* .testimonial-header {
    width: 37%;
@@ -594,9 +597,8 @@ p.lable1 {
 
 .company-section {
 	background: url("../images/bgpic4.jpg") no-repeat;
-	background-size: cover;
-	border: none;
-	padding: 3em 0;
+	background-size: contain;
+	padding: 0;
 }
 
  article > div {
@@ -694,11 +696,17 @@ p.lable1 {
   font-size: 1.3em;
   color: #000000;
  }
-
+ .team-grids {
+	/* border: solid 1px red; */
+	width: 100%;
+ }
  .team-grid {
-	position: relative;
-	text-align: center;
-	margin-top:1em; 
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    float: inline-start;
+    overflow: hidden;
+    margin: 0.1em 0.7em;
   }
 
  .team-grid img {
@@ -746,10 +754,8 @@ p.lable1 {
 
 .pricing-section {
   background: url(../images/bgpic5.jpg) no-repeat;
-  background-size: cover;
-  border: none;
-  min-height: 700px;
-  padding: 1em 0;
+  background-size: contain;
+  padding: 0;
 }
 .pricing-header {
     /* width: 37%; */
@@ -857,7 +863,7 @@ p.lable1 {
   border-radius: 6px;
 }
 .blog-section {
-	border: none;
+	padding: 0;
 }
 .blog-header {
     /* width: 37%; */
@@ -936,8 +942,8 @@ p.lable1 {
 
 .certificate-section{
 	background: url("../images/bgpic1.jpg") no-repeat;
-	background-size: cover;
-	border: none;
+	background-size: contain;
+	/* padding: 0; */
 }
  .certificate {
   width: 250px;
@@ -946,9 +952,8 @@ p.lable1 {
 
 .clients-section{
 	background: url("../images/bgpic6.jpg") no-repeat;
-	background-size: cover;
-	border: none;
-	min-height: 720px;
+	background-size: contain;
+	padding: 0;
 }
 .clients-grid{
 	width: 100%; /* 父容器的宽度 */
@@ -986,6 +991,7 @@ p.lable1 {
    /*-- portfolio --*/
    .product-section{
 	   border: none;
+	   padding: 0;
    }
    #productlist .product {
 	   -webkit-box-sizing: border-box;

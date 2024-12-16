@@ -334,8 +334,8 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 p.lable1 {
   margin-top: 1.5em;
-   font-size: 1.39em;
- color: #000000
+  font-size: 1.39em;
+  color: #000000
 }
 
 .right-top p {
@@ -360,12 +360,14 @@ p.lable1 {
   /* padding: 0; */
   height: 876px;
 }
+.service-leftgrid{
+	margin-top: 8em;
+}
 .service-leftgrid h3 {
   font-size: 2.5em;
   margin-bottom: 1em;
 }
 .service-leftgrid span {
-  color: #000;
   font-size: 1.3em;
   font-weight: 600;
 }
@@ -614,8 +616,25 @@ p.lable1 {
 	/* padding: 0; */
 	height: 877px;
 }
+.company-leftgrid {
+  margin-top: 1em;
+}
+.company-leftgrid h3 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.company-leftgrid span {
+  color: #000;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.company-leftgrid p {
+  font-size: 1.3em;
+  line-height: 1.9em;
+}
 
- article > div {
+
+article > div {
 	text-align: center;
 }
 .wmuSlider {
@@ -720,7 +739,9 @@ p.lable1 {
     -o-box-sizing: border-box;
     float: inline-start;
     overflow: hidden;
-    margin: 0.1em 0.7em;
+    margin: 0.5em;
+    display: inline-block;
+    width: 24%;
   }
 
  .team-grid img {
@@ -918,19 +939,16 @@ p.lable1 {
     display: block;
 }
 .blog-grid p {
-  font-size: 1.2em;
   color: #797272;
   line-height: 1.8em;
 }
 .blog-grid p.date {
-  font-size: 1.3em;
   font-weight: 500;
   color: #000;
 }
 .blog-grid p.date a {
-  font-size: 1em;
-  font-weight: 400;
   color: red;
+  font-weight: 400;
   display: inline-block;
   text-transform:capitalize;
   font-family: 'Roboto', sans-serif;
@@ -2787,3 +2805,5 @@ p.lable1 {
 	.google-map iframe {
  		 min-height: 235px;
 	}
+}
+	

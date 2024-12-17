@@ -106,7 +106,7 @@ body{
 .right_nav {
 	list-style-type: none;
 	padding-left: 0;
-    right: -85px;
+    right: -5%;
     bottom: 50%;
     position: fixed;
     text-align: right;
@@ -188,7 +188,7 @@ body{
 	font-weight: 600;
 }
 .sectionheader p {	
-	text-align: left;	
+	text-align: left;		
 	color: #000000;
  }
 /*******section***********/
@@ -329,7 +329,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   font-weight: 600;
 }
 .right-top {
-    width: 60%;
+    width: 80%;
     margin: -7em 7em;
 }
 p.lable1 {
@@ -620,7 +620,7 @@ p.lable1 {
   margin-top: 1em;
 }
 .company-leftgrid h3 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin-bottom: 1em;
 }
 .company-leftgrid span {
